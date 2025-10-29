@@ -21,6 +21,7 @@ const RelatedProducts = ({category, subCategory}) => {
         }
     }
 
+
     useEffect(() => {
         filterRelatedProduct();
     }, [products]);
