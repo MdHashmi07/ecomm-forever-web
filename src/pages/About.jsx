@@ -1,9 +1,23 @@
 import React from 'react'
+import { assets } from '../assets/assets'
+import Title from '../components/Title'
 
 const About = () => {
   return (
     <div>
+      <div className='text-2xl text-center pt-8 border-t'>
+        <Title text1={'ABOUT'} text2={'US'}/>
+      </div>
       
+      <div className='my-10 flex flex-col md:flex-row gap-16'>
+          <img className='w-full md:max-w-[450px]' src={assets.about_img} alt="about img" />
+          <div className='flex flex-col justify-center gap-6 md:w-2/4 text-gray-600'>
+            <p>Forever was born out of a passion for innovation and desire to revolutionize the way people shop online. Our journey began with a simple idea:to provide a platform where customers can easily discover, explore and purchase a wide range of products from the comfort of their homes.</p>
+            <p>Since our inception, we've worked timelessly to curate a diverse selection of high-quality products that cater taste and preference. From fashion and beauty to electronics and home essentials. we offer an expensive collection sourced from tursted brands and suppliers.</p>
+            <b className='text-gray-800'>Our Mission</b>
+            <p>Our Mission  at Forever is to empower customers with choice. Convenience, and confidence. We're dedicated to providing a seamless shopping experince that exceed expectations, from browsing and ordering to delivery and beyound.</p>
+          </div>
+      </div>
     </div>
   )
 }
